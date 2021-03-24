@@ -7,15 +7,15 @@ let sender;
 if (url.searchParams.get('by') != null) {
   sender = url.searchParams.get('by');
 } else {
-  sender = "Adam";
+  sender = "Agil";
 }
 
 let footer = document.getElementById("credit");
 footer.innerHTML = sender;
-footer.href = "https://www.instagram.com/adamukti/";
+footer.href = "https://www.instagram.com/agilkrisna__/";
 
 document.querySelector(".tombol").addEventListener('click', function () {
-  Swal.fire("Hallo Pacarku", "Aku ada pertanyaan nih buat kamu?", "question").then(function () {
+  Swal.fire("Hallo Pacarku yang bakal jadi Istriku", "Aku ada pertanyaan nih buat kamu?", "question").then(function () {
     Swal.fire("Jawab yang jujur ya!").then(function () {
       Swal.fire("Awas aja kalo boong!!", "", "error").then(function () {
 
@@ -28,7 +28,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
           showCancelButton: true,
           inputValidator: (value) => {
             if (!value) {
-              return 'Isi dulu dong beb'
+              return 'Isi dulu dong yang'
             } else {
               nama = value;
             }
